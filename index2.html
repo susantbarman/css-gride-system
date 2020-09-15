@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gride layout by Susant Barman</title>
+	<style>
+		*{
+
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.header{
+
+	display: grid;
+	grid-template-columns: 2fr 6fr 2fr;
+	grid-template-areas: "header header header";			
+	grid-gap: 10px;
+}
+		
+
+	.header{
+	grid-area:  header;
+	background-color: yellow;
+	height: 100px;
+}
+.content_body{
+
+	display: grid;
+	grid-template-columns: 5fr 5fr ;
+	grid-template-areas:"mainwriten sidebar" 
+
+
+}
+
+.mainwriten{
+	background-color: red;
+	height: 300px;
+}
+.sidebar{
+	background-color: green;
+	height: 300px;
+}
+
+
+.box{
+
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-areas:"box1 box2 box3" 
+
+
+
+}
+
+.footerarea{
+
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-areas:"footerarea footerarea footerarea" 
+
+
+}
+.footerarea{
+
+	grid-area:  footerarea;
+	background-color: yellow;
+	height: 100px;
+
+}
+
+.box1{
+
+	background-color: black;
+	height: 200px;
+	
+}
+
+.box2{
+	background-color: orange;
+	height: 200px;
+
+}
+.box3{
+	background-color: black;
+	height: 200px;
+
+}
+
+
+/* menu design */
+
+.header ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	margin-top: 25px;
+}
+.header ul li{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	padding: 10px;
+
+}
+.header ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	padding: 10px;
+	text-transform: uppercase;
+	font-family: aharoni;
+
+}
+</style>
+</head>
+<body>
+
+
+	<div id="container">
+
+		<div class="header">
+
+			<h1>Header</h1>
+			
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</div>
+		<div class="content_body">
+
+			<div class="mainwriten"><h1>main Writer</h1></div>
+			<div class="sidebar"><h1>Sidebar</h1></div>
+			
+		</div>
+		<div class="box">
+
+			<div class="box1"> <h1>box1</h1></div>
+			<div class="box2"><h1>box2</h1></div>
+			<div class="box3"><h1>box3</h1></div>
+			
+		</div>
+	
+		<div class="footerarea">
+			<span>footer section</span>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
